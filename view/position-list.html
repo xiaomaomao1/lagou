@@ -1,0 +1,15 @@
+<div class="position-list">
+    <ul>
+        <li ng-repeat="pos in data|filterByObj:filterObj" ui-sref="details({id:pos.id})">
+            <img ng-src="{{pos.imageUrl}}">
+            <div>
+                <h4>{{pos.companyName}}{{pos.cityName}}{{pos.scaleName}}</h4>
+                <h5>{{pos.salaryName}}</h5>
+                <h4>{{pos.date}}</h4>
+            </div>
+            <img ng-src="{{imgUrl}}" ng-hide="0" ng-click="doStar($event)" id="star">
+             <span ng-if="isFavorite" ng-click="$event.stopPropagation();select(item);" class="p-a icon {{item.select?'star-active':'star'}}"></span>
+        </li>
+    </ul>
+   
+</div>

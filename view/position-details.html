@@ -1,0 +1,20 @@
+<div class="position-details">
+
+   <div class="details-top">
+   		<p>{{data.name}} 
+   		<span class="first">{{data.salaryName}}</span> </p>
+   		<p>{{data.cityName}}  
+   		<span>{{data.experience}}</span>   <span>{{data.education}}</span></p>
+
+   		<p>{{data.benefit}}</p>
+   		<img src="{{imgUrl}}" ng-hide="flag" ng-click="doStar()" class="star">
+
+   </div>
+   <div app-company></div>
+   <div class="details-middle">
+   <div >职位描述</div>
+   <pre>{{data.description}}</pre>
+   </div>
+  
+  
+</div>

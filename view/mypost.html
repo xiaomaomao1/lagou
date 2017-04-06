@@ -1,0 +1,29 @@
+<div >
+	<div class="post-middle">
+		
+	
+	<p>职位分类</p>
+	<button type="" ng-click="doChange1()" ng-class="sty1">{{data1.positionClass[0].name}}</button>
+	<button type="" ng-click="doChange2()" ng-class="sty2">{{data1.positionClass[1].name}}</button>
+	</div>
+	<div class="post-bottom" ng-show="flag1">
+
+		<p>{{data1.positionClass[0].positionList[0].name}}</p>
+		<span>{{data1.positionClass[0].positionList[0].salary}}</span>
+		<p>{{data1.positionClass[0].positionList[0].createdDate}}</p>
+	
+		
+	</div>
+	<div class="post-bottom" ng-show="flag2">
+	
+		
+	
+		<p>{{data1.positionClass[1].positionList[0].name}}</p>
+		<span>{{data1.positionClass[1].positionList[0].salary}}</span>
+		<p>{{data1.positionClass[1].positionList[0].createdDate}}</p>
+	
+	</div>
+	<div class="position-list-buttom">
+   	
+   </div>
+</div>

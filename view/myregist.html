@@ -1,0 +1,31 @@
+
+<div class="login-bg">
+	<div class="login-top" id="top">
+		<label for="phone" ><span class="img">
+			<i class="icon iconfont icon-man"></i>
+		</span>
+			
+		<input type="text" ng-model="phone" value="" placeholder="请输入手机号" ng-blur="doCheckPhone1()"><span ng-bind="check1" class="ng" ></span></label>
+		<label for="pwd" >
+		<span class="img">
+			<i class="icon iconfont icon-mima"></i>	
+		</span>
+		<input type="text" ng-model="pwd" value="" placeholder="设置6位以上的密码" ng-blur="doCheckPhone2()" ><span ng-bind="check2" class="ng1" ></span>	</label>
+	</div>
+
+	<div class="sendMess">
+		<div>
+
+			短信验证码
+		</div>
+		
+		<div ng-click="doMess()" ng-bind="message"></div>
+	</div>
+<div class="login-bottom" id="bottom">
+	<button ui-sref="login" >登录</button>
+	<button ng-click="doRegist()">注册</button>
+</div>
+	
+</div>
+
+
